@@ -388,7 +388,7 @@ export function getMediaBackdrop(
   backdropPath: string | null,
 ): string | undefined {
   const shouldProxyTmdb = usePreferencesStore.getState().proxyTmdb;
-  const imgUrl = `https://image.tmdb.org/t/p/original${backdropPath}`;
+  const imgUrl = `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9pbWFnZS50bWRiLm9yZw==/t/p/original${backdropPath}`;
   const proxyUrl = getProxyUrls()[0];
   if (proxyUrl && shouldProxyTmdb) {
     return `${proxyUrl}/?destination=${imgUrl}`;
@@ -398,7 +398,7 @@ export function getMediaBackdrop(
 
 export function getMediaPoster(posterPath: string | null): string | undefined {
   const shouldProxyTmdb = usePreferencesStore.getState().proxyTmdb;
-  const imgUrl = `https://image.tmdb.org/t/p/w342/${posterPath}`;
+  const imgUrl = `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9pbWFnZS50bWRiLm9yZw==/t/p/w342/${posterPath}`;
 
   if (shouldProxyTmdb) {
     const proxyUrls = getProxyUrls();
@@ -494,7 +494,7 @@ export async function getMediaLogo(
       data.logos?.find((l: any) => l.iso_639_1 === "en") ||
       data.logos?.[0];
     if (logo && logo.file_path) {
-      return `https://image.tmdb.org/t/p/original${logo.file_path}`;
+      return `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9pbWFnZS50bWRiLm9yZw==/t/p/original${logo.file_path}`;
     }
     return undefined;
   } catch (err) {
@@ -536,7 +536,7 @@ export function getPersonProfileImage(
   profilePath: string | null,
 ): string | undefined {
   const shouldProxyTmdb = usePreferencesStore.getState().proxyTmdb;
-  const imgUrl = `https://image.tmdb.org/t/p/w185/${profilePath}`;
+  const imgUrl = `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9pbWFnZS50bWRiLm9yZw==/t/p/w185/${profilePath}`;
 
   if (shouldProxyTmdb) {
     const proxyUrls = getProxyUrls();
