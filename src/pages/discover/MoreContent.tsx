@@ -343,7 +343,7 @@ export function MoreContent({ onShowDetails }: MoreContentProps) {
                 id: item.id.toString(),
                 title: item.title || item.name || "",
                 poster: item.poster_path
-                  ? `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9pbWFnZS50bWRiLm9yZw==/g/t/p/w342${item.poster_path}`
+                  ? `https://image.tmdb.org/t/p/w342${item.poster_path}`
                   : "/placeholder.png",
                 type: isTVShow ? "show" : "movie",
                 year,
