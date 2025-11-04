@@ -153,8 +153,8 @@ export function decodeTMDBId(
   };
 }
 
-const tmdbBaseUrl1 = "https://tmdb.pampaisd.org/3/";
-const tmdbBaseUrl2 = "https://tmdb.pampaisd.org/3/";
+const tmdbBaseUrl1 = "https://tmdb.pampaisd.org/site/https://api.themoviedb.org/3/";
+const tmdbBaseUrl2 = "https://tmdb.pampaisd.org/site/https://api.tmdb.org/3/";
 
 const apiKey = conf().TMDB_READ_API_KEY;
 
