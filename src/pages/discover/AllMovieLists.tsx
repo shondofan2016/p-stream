@@ -157,7 +157,7 @@ export function DiscoverMore() {
                         id: movie.id.toString(),
                         title: movie.title,
                         poster: movie.poster_path
-                          ? `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9pbWFnZS50bWRiLm9yZw==/t/p/w342${movie.poster_path}`
+                          ? `https://image.tmdb.org/t/p/w342${movie.poster_path}`
                           : "/placeholder.png",
                         type: "movie",
                         year: movie.release_date
