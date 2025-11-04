@@ -153,8 +153,8 @@ export function decodeTMDBId(
   };
 }
 
-const tmdbBaseUrl1 = `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9hcGkudGhlbW92aWVkYi5vcmc=/`;
-const tmdbBaseUrl2 = `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9hcGkudG1kYi5vcmc=/`;
+const tmdbBaseUrl1 = `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9hcGkudGhlbW92aWVkYi5vcmc=/3/`;
+const tmdbBaseUrl2 = `https://tmdb.pampaisd.org/site/aHR0cHM6Ly9hcGkudG1kYi5vcmc=/3/`;
 
 const apiKey = conf().TMDB_READ_API_KEY;
 
