@@ -15,7 +15,7 @@ const testMeta: PlayerMeta = {
   title: "Sintel",
   tmdbId: "45745",
   type: "movie",
-  poster: "https://image.tmdb.org/t/p/w342//4BMG9hk9NvSBeQvC82sVmVRK140.jpg",
+  poster: "https://tmdb.pampaisd.org/site/aHR0cHM6Ly9pbWFnZS50bWRiLm9yZw==/t/p/w342//4BMG9hk9NvSBeQvC82sVmVRK140.jpg",
 };
 
 const testStreams: Record<StreamType, string> = {
