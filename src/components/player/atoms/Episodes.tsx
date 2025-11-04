@@ -164,7 +164,7 @@ function EpisodeItem({
         <div className="relative aspect-video max-h-[110px] w-1/3 flex-shrink-0 bg-video-context-hoverColor">
           {episode.still_path ? (
             <img
-              src={`https://image.tmdb.org/t/p/w300${episode.still_path}`}
+              src={`https://tmdb.pampaisd.org/site/aHR0cHM6Ly9pbWFnZS50bWRiLm9yZw==/t/p/w300${episode.still_path}`}
               alt={episode.title}
               className="w-full h-full object-cover"
             />
